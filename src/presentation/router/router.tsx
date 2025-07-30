@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import {
   AssistantPage,
   AudioToTextPage,
@@ -83,6 +83,15 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <DashboardLayout />,
-    children: []
+    children: [
+      ...menuRoutes.map(route => ({
+        path: route.to,
+        element: route.component
+      })),
+      {
+        path: '',
+        element: <Navigate to={menuRoutes[0].to} />
+      }
+    ]
   }
 ])
