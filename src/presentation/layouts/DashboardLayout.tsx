@@ -16,7 +16,13 @@ export const DashboardLayout = () => {
         {/* Opciones del menú */}
         <div className="flex flex-col gap-2 mt-2 bg-indigo-50/60 p-3 rounded-xl shadow-inner border border-indigo-100">
           {menuRoutes.map((route) => (
-            <SidebarMenuItem key={route.to} to={route.to} icon={route.icon} title={route.title} />
+            <SidebarMenuItem
+              key={route.to}
+              to={route.to}
+              icon={route.icon}
+              title={route.title}
+              description={route.description}
+            />
           ))}
         </div>
 
