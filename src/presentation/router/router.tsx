@@ -10,6 +10,7 @@ import {
   TextToAudioPage,
   TranslatePage
 } from '../pages';
+import { DashboardLayout } from "../layouts/DashboardLayout";
 
 
 export const menuRoutes = [
@@ -81,7 +82,7 @@ export const menuRoutes = [
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: 'element',//,
+    element: <DashboardLayout />,
     children: []
   }
 ])
