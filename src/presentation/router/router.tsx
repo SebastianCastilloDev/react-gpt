@@ -1,13 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
-import { OrthographyPage } from "../pages/orthography/OrthographyPage";
-import { ProsConsPage } from "../pages/pros-cons/ProsConsPage";
-import { ProsConsStreamPage } from "../pages/pros-cons-stream/ProsConsStreamPage";
-import { TranslatePage } from "../pages/translate/TranslatePage";
-import { TextToAudioPage } from "../pages/text-to-audio/TextToAudioPage";
-import { ImageGenerationPage } from "../pages/image-generation/ImageGenerationPage";
-import { ImageTunningPage } from "../pages/image-tunning/ImageTunningPage";
-import { AudioToTextPage } from "../pages/audio-to-text/AudioToTextPage";
-import { AssistantPage } from "../pages/assistant/AssistantPage";
+import {
+  AssistantPage,
+  AudioToTextPage,
+  ImageGenerationPage,
+  ImageTunningPage,
+  OrthographyPage,
+  ProsConsPage,
+  ProsConsStreamPage,
+  TextToAudioPage,
+  TranslatePage
+} from '../pages';
+
 
 export const menuRoutes = [
   {
